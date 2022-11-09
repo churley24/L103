@@ -1,0 +1,32 @@
+cpsc_names = ["Cody","Brown","Julia","Bub","Catherine" ,"Doherty","Margaret","Dunn","Haley","Greene"
+,"Isabela"	,"Guthrie Beckstrom"
+,"Danielle"	,"Hongell"
+,"Camryn"	,"Hurley"
+,"Ellen"	,"Kevin"
+,"Brenna"	,"Kieft"
+,"Amanda"	,"Miloserny"
+,"Kaylen"	,"Nyhuis"
+,"Cadyn"	,"Reger"
+,"Emily"	,"Rusch"
+,"Britney"	,"Salazar"
+,"Julia"	,"Schutz"
+,"Christina","Shadid"
+,"Holly"	,"Skrip"
+,"Anna" ,"Sullivan"
+,"Adrianne"	,"Verstraete"
+,"Sarah"	,"Wardlow"]
+
+h = cpsc_names[1::2]
+
+
+def histogram(x):
+    d = dict()
+    for char in x:
+        s = char[0]
+        if s not in d:
+            d[s] = 1
+        else:
+            d[s] += 1
+    print(d)
+
+histogram(h)
